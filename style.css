@@ -65,6 +65,8 @@ html {
 .town-img {
     height: 720px;
     width: 40vw;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .right-part {
@@ -76,9 +78,6 @@ html {
 }
 
 .tittle-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 
@@ -95,21 +94,17 @@ html {
     background-color: var(--backgroud-color);
     display: flex;
     justify-content: center;
-    flex-direction: row;
-}
-
-.column {
-    flex-direction: column;
+    flex-flow: row wrap;
+    width: 60vw;
 }
 
 .input-wrap {
-    clear: both;
-    float: left;
     padding: 25px;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 label {
-    float: top;
     font-size: 20px;
     box-shadow: 0px 15px 10px -15px var(--text-color);
 }
@@ -152,7 +147,10 @@ input:focus {
 }
 
 
+.butt-div{
 
+    flex-flow: column nowrap;
+}
 
 
 
